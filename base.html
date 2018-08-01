@@ -1,0 +1,112 @@
+
+<?php
+		
+
+			$login = $_POST['login'];
+			echo 'Bem vindo, '.$login;
+?>
+<!DOCTYPE HTML>
+<html>
+		
+
+	<head>
+		<title> Login de Usuário </title>
+	
+		<meta charset="utf-8">
+        	<meta name="viewport" content="width=device-width">
+    		<link href="centralizar.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			
+			body{
+
+				margin:0;
+				padding:150px;
+				height:100%;
+				background: url(faeterj.jpg)no-repeat 0 0 #fff;
+    				background-size: contain;
+			    }
+			 .tudo{
+				 min-height:100%;
+				 position:relative;
+			      }
+			 .conteudo{
+					
+				  padding:200px;
+				  padding-bottom:60px;
+				  
+			      }
+			 .topo{
+				  
+				  padding:40px;
+
+				  
+		 	      }
+
+			 .rodape{
+				
+				  position:absolute;
+				  bottom:0;
+				  width:100%;
+				  height:90px;
+				  
+			     }
+
+			
+		
+
+		</style>
+    	
+	</head>
+	
+	<body>
+		
+		
+		   <div class="tudo">
+			<?php
+		
+
+				$login = $_POST['login'];
+				echo 'Bem vindo, '.$login;
+		       ?>
+				<div class="topo">
+					
+					
+					    <p> 
+						     <div align = "right"> 
+		
+								<form method="POST" action="base.php">
+									
+									
+									
+								 	<label><strong><font color= "red"size ="5">Matricula:</font></strong></label><input type="password" name="senha" id="senha"><br>
+
+									<input type="submit" value="Disciplinas" id="disciplinas" name="disciplinas" style="width: 200px; height: 50px; color:ff9900; background-color:#5efda8"><br>
+									<input type="submit" value="Horas Complementares" id="horas_compl" name="horas_compl" style="width: 200px; height: 50px; color:ff9900; background-color:#5eb3fd"><br>
+									<input type="submit" value="Estagio" id="estagio" name="estagio" style="width: 200px; height: 50px; color:ff9900; background-color:#fd6687"><br>
+									
+									<input type="submit" value="TCC" id="tcc" name="tcc" style="width: 200px; height: 50px; color:ff9900; background-color:#fdcd66"><br>
+								</form>
+				
+		
+		
+							
+							 
+				
+								
+				
+							 
+						      </div>
+					     </p>
+				</div>
+		   </div>
+		   
+		  <body background= "faeterj.jpg"></body>
+	 
+	
+	
+
+
+</html>
+
+
+

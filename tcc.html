@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+		
+
+	<head>
+		<title> TCC </title>
+	
+		<meta charset="utf-8">
+        	<meta name="viewport" content="width=device-width">
+    		<link href="centralizar.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			
+			body{
+
+				margin:0;
+				padding:150px;
+				height:100%;
+				background: url(faeterj.jpg) no-repeat 0 0 #fff;
+    				background-size: contain;
+			    }
+			 .tudo{
+				 min-height:100%;
+				 position:relative;
+			      }
+			 .conteudo{
+					
+				  padding:200px;
+				  padding-bottom:60px;
+				  
+			      }
+			 .topo{
+				  
+				  padding:40px;
+
+				  
+		 	      }
+
+			 .rodape{
+				
+				  position:absolute;
+				  bottom:0;
+				  width:100%;
+				  height:90px;
+				  
+			     }
+
+			/* Reset CSS 
+		*, *:after, *:before{
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		  font-family: sans-serif;
+		  font-size: 14px;
+		  line-height: 1.5;
+		}*/
+		/* Fundo do menu 
+		.menu{
+		  background: #000;
+		}*/
+		/* Remove as bolinhas do lado das listas */
+		.menu .menu-list, .menu .sub-menu{
+		  list-style: none;
+		}
+		/* Configura todos os links do nosso menu */
+		.menu a{
+		  color: #fff;
+		  text-decoration: none;
+		  display: block;
+		  cursor: pointer;
+		  text-transform: uppercase;
+		  font-size: 12px;
+		  font-weight: 700;
+		  letter-spacing:0.2em;
+		}
+		/* Faz os <li>s ficarem na horizontal */
+		.menu > .menu-list > li{
+		  float: left;
+		  position: relative;
+		}
+		/* Configura os links do menu principal */
+		.menu > .menu-list > li > a {
+		  padding: 20px;
+		  margin: 0 5px;
+		  background: #000;
+		}
+		/* Configura o fundo do menu principal quando com mouse hover */
+		.menu > .menu-list > li:hover a {
+		  background: #444;
+		}
+		/* Mostra o submenu no evento de mouse hover */
+		.menu > .menu-list > li:hover > .sub-menu {
+		  display: block;
+		}
+		/* Configura o estilo do submenu */
+		.menu > .menu-list > li > .sub-menu {
+		  position: absolute;
+		  top: 50px;
+		  left: 5px;
+		  background: blue;
+		  min-width: 200px;
+		  z-index: 1000;
+		  display: none;
+		}
+		/* Configura os links do submenu */
+		.menu > .menu-list > li > .sub-menu > li > a {
+			padding: 10px 20px;
+		}
+		/* Clearfix para o menu */
+		.menu:after {
+		  content: '.';
+		  display: block;
+		  clear: both;
+		  visibility: hidden;
+		  line-height: 0;
+		  height: 0;
+		}
+
+
+
+		
+
+		</style>
+    	
+	</head>
+	<body>
+		   <div class="tudo">
+				<div class="topo">
+					<h1><font color= "green"size ="5">TCC</h1>
+					    <p> 
+						    <div align = "right">  
+		
+								<form method="POST" action="tcc_admin.php">
+									<div style="float:right; WIDTH:50%">
+									<label><strong><font color= "pink"size ="3">Digite a matricula:</font></strong></label><input type="text" name="matricula" id="matricula"><br>
+									
+									<label><strong><font color= "orange"size ="3">Situação:</font></strong></label><input type="text" name="situacao"><br>  	
+									
+									<label><strong><font color= "blue"size ="3">Titulo:</font></strong></label><input type="text" name="titulo"><br>
+									
+									<label><strong><font color= "red"size ="3">Prazo:</font></strong></label><input type="text" name="prazo"><br>  		
+ 	 								
+									<label><strong><font color= "green"size ="3">Data de Inicio:</font></strong></label><input type="date" name="data"><br>  		
+
+									 
+
+
+										
+										
+									
+
+									</div>
+
+									
+									<div style="clear:both"></div>
+									
+
+									<input type="submit" value="Enviar" id="inserir" name="inserir" style="width: 230px; height: 30px; color:ff9900; background-color:#b8a0e1"><br>
+				
+			
+								</form>
+				
+		
+		
+							
+							 
+				
+								
+				
+							 
+						      </div>
+					     </p>
+				</div>
+		   </div>
+		   
+		  <body background= "faeterj.jpg"></body>
+	 
+	
+	
+
+
+</html>
+

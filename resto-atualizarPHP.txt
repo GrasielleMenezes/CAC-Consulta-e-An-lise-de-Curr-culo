@@ -1,0 +1,33 @@
+if(isset($disciplinas)) 
+	     {
+		
+		$verDisc= implode( ',' ,$_POST['disciplinas']);
+
+                   
+			$query = "UPDATE pendencias SET codigo_disciplinas = '$verDisc',  situacao='$situacao' WHERE matricula_aluno = $matricula"; or die("erro ao atualizar");	
+			if (mysql_num_rows($query)<=0)
+			{
+				echo"<script language='javascript' type='text/javascript'>alert('NÃO FORAM SELECIONADAS DISCIPLINAS PARA SEREM ATUALIZADAS');window.location.href='admin.html';</script>";
+		                die();
+			}
+                        else
+			{
+			   mysql_query($query,$connect);
+			   echo"<script language='javascript' type='text/javascript'>alert('ATUALIZADO');window.location.href='admin.html';</script>";
+			   die();
+		        }
+		
+	     }
+	    else
+	     {
+		echo"<script language='javascript' type='text/javascript'>alert('NÃO FORAM SELECIONADAS DISCIPLINAS PARA SEREM ATUALIZADAS');window.location.href='admin.html';</script>";
+		die();
+	     }
+
+
+        }
+	else
+	     {
+		echo "<script language='javascript' type='text/javascript'>alert('NÃO FORAM SELECIONADAS DISCIPLINAS PARA SEREM ATUALIZADAS');window.location.href='admin.html';</script>";
+		die();
+	     }
